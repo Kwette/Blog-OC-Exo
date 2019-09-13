@@ -1,0 +1,9 @@
+<div class="container mt-8 mb-4 p-4" style=" box-shadow: 0 0 7px rgba(0,0,0,0.2); border-radius: 5px">
+  <h1 class="mb-4 mt-4"><%= @article.title.capitalize %></h1>
+  <p class="mt-4 mb-4"><% 3.times do %>
+    <%= @article.content.capitalize %>
+    <br>
+    <% end %>
+  </p>
+  <%= link_to "<< Retour", articles_path %>
+</div>
